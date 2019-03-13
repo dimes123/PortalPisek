@@ -9,5 +9,6 @@ Naloge so vsebovane v imeniku znotraj direktorija `Slovenia`:
 
 ## Grafike
 
-* 
+Ikone se nahajajo v imenikih nalog znotraj direktorija `Slovenia`.
+Uporabljene grafike nalog so zbrane v direktoriju `Grafike`.
 
