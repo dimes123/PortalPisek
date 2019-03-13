@@ -1,8 +1,8 @@
-### PortalPisek
+# PortalPisek
 Skupni repozitorij za delo na Portalu Pisek
 
-# Graficne podobe
+### Graficne podobe
 
-# Besedila
+### Besedila
 
-# Tehnicna podpora
+### Tehnicna podpora
