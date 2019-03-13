@@ -9,7 +9,7 @@ Naloge so vsebovane v imenikih nalog: `Slovenia/ime_naloge`:
 
 ## Knjižnice 
 
-Prevodi opozoril in ostalih besedil so zbrani v `Slovenia/modules`.
+Prevodi opozoril in imen kock so zbrani v `Slovenia/modules`.
 
 ## Grafike
 
