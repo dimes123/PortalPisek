@@ -54,5 +54,5 @@ Prevodi opozoril in imen kock so zbrani v `Slovenia/modules`. Vsaka datoteka vse
 ## Grafike
 
 Ikone se nahajajo v imenikih nalog v direktorijih `Slovenia/ime_naloge`.
-Uporabljene grafike nalog so zbrane v direktoriju `Grafike`. Ikone junakov (pišek, robotek, ipd.) imajo več zornih kotov.
+Uporabljene grafike nalog so zbrane v direktoriju `Grafike`. Ikone junakov (pišek, robotek, ipd.) imajo več zornih kotov, vendar število teh določimo s `nbStates` v `task.js`.
 
