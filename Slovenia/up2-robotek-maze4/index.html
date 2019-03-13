@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>uc2-robot-maze4</title>
+	    <!-- source: https://github.com/France-ioi/bebras-tasks/tree/master/algorea_training/training-while-marbles -->
+        <script>
+            window.stringsLanguage = 'sl';
+        </script>
+        <script class="remove" type="text/javascript" src="../../_common/modules/pemFioi/importModules-1.0.js" id="import-modules"></script>
+        <script class="remove" type="text/javascript">
+            var modulesPath = '../../_common/modules/';
+            importModules([
+                'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+                'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+                'taskStyles-0.1']);
+            // set Blockly as default language when none is specified through ?language=
+            importLanguageModules('blockly');
+        </script>
+      <script class="remove" type="text/javascript" src="blocklyPisek_lib.js" id="blocklyPisek_lib"></script>
+        <script class="remove" type="text/javascript">
+            var json = {
+                "id": "http://castor-informatique.fr/questions/algorea_training/training-while-marbles/",
+				"language": "sl",
+				"version": "sl.01",
+				"authors": "KSpenko",
+				"translators": [],
+				"license": "",
+				"taskPathPrefix": "",
+				"modulesPathPrefix": "",
+				"browserSupport": [],
+				"fullFeedback": true,
+				"minWidth": "auto"
+			};
+        </script>
+	  
+        <img src="green_robot.png" style="display:none" />
+		
+        <img src="obstacle.png" style="display:none" />
+        <img src="green.png" style="display:none" />
+		
+        <img src="marble.png" style="display:none" />
+        <img src="hole.png" style="display:none" />
+        <img src="marker.png" style="display:none" />
+		
+		<!-- manjkajo se Pill in Platform -->
+		 
+        <script type="text/javascript" src="task.js"></script>
+    </head>
+   
+    <body onresize="task.displayedSubTask.updateScale()">
+        <div id="taskIntro" style="width: 100%">
+            <h1>Robotek obračanje 1</h1>
+
+            <div id="tabsContainer"></div>
+            <div id="taskContent">
+                <div id="taskIntro">
+					<p>
+                    Sprogramiraj robotka, da se bo odpeljal na zeleno polje. Robotek naj neha hoditi ko dospe do zelenega polja! 
+					Robotek naj hodi naravnost dokler ne naleti na označeno polje.
+					</p>
+					<div class="easy">
+						<p>
+						Če robotek pride na označeno polje naj se obrne levo nato pa nadaljuje naravnost.
+						Robotek ve, da bo naletel na 10 označenih polj! 
+						</p>
+					</div>
+					<div class="medium">
+						<p>
+						Če robotek pride na označeno polje naj se obrne desno nato pa nadaljuje naravnost.
+						Robotek ne ve na koliko označenih polj bo naletel med potjo! Potreboval boš <i>neskončno zanko</i>!
+						</p>
+					</div>
+					<div class="hard">
+						<p>
+						Če robotek pride na označeno polje naj se obrne levo, ko naleti na naslednje označeno polje pa naj se obrne desno, nato levo, desno, itd.
+						Robotek ne ve na koliko označenih polj bo naletel med potjo! Potreboval boš <i>neskončno zanko</i>! Zato, da boš vedel kdaj obrniti levo, kdaj pa desno ustvari spremenljivko.
+						Na spremenljivki lahko shraniš na koliko označenih polj je robotek že naletel, nato pa preverjaš če je število sodo ali liho!
+						</p>
+					</div>
+                </div>
+                <div id="gridContainer"></div>
+                <div id="blocklyLibContent"></div>
+            </div>
+
+        </div><!-- task -->
+    </body>
+</html>
+ 

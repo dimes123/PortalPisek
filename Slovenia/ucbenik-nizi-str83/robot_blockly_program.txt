@@ -1,0 +1,1 @@
+<xml xmlns="http://www.w3.org/1999/xhtml"><block type="robot_start" id="|7q8o*n}w``NgQJ.|Ng?" deletable="false" movable="false" editable="false" x="0" y="0"><next><block type="print" id="D/!pkjh!BO`{DJs1x0jw"></block></next></block></xml>

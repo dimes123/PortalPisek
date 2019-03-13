@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+   <head>
+    <meta charset="utf-8">
+    <title>dragon-repeat-paint</title>
+	<!-- source: https://github.com/France-ioi/bebras-tasks/tree/master/algorea_training/training-repeat-paint -->
+      <script>
+      window.stringsLanguage = 'sl';
+      </script>
+      <script class="remove" type="text/javascript" src="../../_common/modules/pemFioi/importModules-1.1.js" id="import-modules"></script>
+      <script class="remove" type="text/javascript">
+        var modulesPath = '../../_common/modules/'
+        importModules([
+            'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+            'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+            'taskStyles-0.1']);
+        // set Blockly as default language when none is specified through ?language=
+        importLanguageModules('blockly');
+      </script>
+      <script class="remove" type="text/javascript" src="blocklyPisek_lib.js" id="blocklyPisek_lib"></script>
+      <script class="remove" type="text/javascript">
+       var json = {
+          "id": "http://castor-informatique.fr/questions/algorea_training/training-repeat-paint/",
+          "language": "sl",
+          "version": "sl.01",
+          "authors": "",
+          "translators": [],
+          "license": "",
+          "taskPathPrefix": "",
+          "modulesPathPrefix": "",
+          "browserSupport": [],
+          "fullFeedback": true,
+          "minWidth": "auto"
+      };
+      </script>
+      <script type="text/javascript" src="task.js"></script>
+   </head>
+   <body onresize="task.displayedSubTask.updateScale()">
+      <div id="task">
+         <h1>Nariši stopnice II.</h1>
+         <img src="marker.png" style="display:none" />
+         <img src="paint2.png" style="display:none" />
+         <img src="green_dragon.png" style="display:none" />
+         <img src="icon.png" style="display:none" />
+
+         <div id="tabsContainer"></div>
+         <div id="taskContent">
+            <div id="taskIntro">
+               <p>
+                  Napiši zmajčku navodilo po katerem bo pobarval vsa označena polja.
+               </p>
+               <div class="easy">
+                  <p>
+                  Tvoja naloga je napisati program sestavljen iz ene same zanke <i>ponavljaj</i> in pogoja, kot na primer:
+                  </p>
+                  <img data-lang="blockly" src="structure_easy_blockly.png" style="height:150px"/>
+                  <img data-lang="scratch" src="structure_easy_scratch.png" style="height:250px"/>
+                  <code data-lang="python">
+from robot import *
+for loop in range(10)
+   nadaljuj()
+   if ...:
+      pobarvaj()
+                  </code>
+                  <p>
+                     Pravilen pogoj uporablja stolpec z zmajčkom. Primer pogoja s stolpcem, v katerem je zmajček:
+                  </p>
+                  <img data-lang="blockly" src="condition_easy_blockly.png" style="height:90px"/>
+                  <img data-lang="scratch" src="condition_easy_scratch.png" style="height:120px"/>
+                  <p>
+                     <b>Zapomni si:</b> naloga ima več testov. Tvoj program mora opraviti vse.
+                  </p>
+               </div>
+               <div class="medium hard">
+                  <p>
+                     Tvoja naloga je napisati program, ki vsa polja preveri s pogojem in določi ali naj jih zmajček pobarva. Pogoj lahko uporablja senzorja <i>stolpec zmajčka</i> in <i>vrstica zmajčka</i>.
+                  </p>
+                  <p class="medium">
+                     Polja, ki so pod diagonalo, imajo število vrstice strogo manjše od števila stolpca.
+                  <p>
+                  <p>
+                     Tvoj program lahko natanko enkrat uporabiti navodilo <code>pobarvaj polje</code>.
+                  </p>
+               </div>
+            </div>
+            <div id="gridContainer"></div>
+            <div id="blocklyLibContent"></div>
+         </div>
+
+      </div><!-- task -->
+   </body>
+</html>
+ 

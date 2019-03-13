@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+   <head>
+    <meta charset="utf-8">
+    <title>pisek-repeat-nested-if-marbles</title>
+     <script>
+      window.stringsLanguage = 'sl';
+      </script>
+      <script class="remove" type="text/javascript" src="../../_common/modules/pemFioi/importModules-1.1.js" id="import-modules"></script>
+      <script class="remove" type="text/javascript">
+        var modulesPath = '../../_common/modules/'
+        importModules([
+            'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+            'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+            'taskStyles-0.1']);
+        // set Blockly as default language when none is specified through ?language=
+        importLanguageModules('blockly');
+      </script>
+      <script class="remove" type="text/javascript" src="blocklyPisek_lib.js" id="blocklyPisek_lib"></script>
+      <script class="remove" type="text/javascript">
+       var json = {
+          "id": "http://castor-informatique.fr/questions/algorea_training/training-repeat-marble/",
+          "language": "sl",
+          "version": "sl.01",
+          "authors": "Kristof Spenko",
+          "translators": [],
+          "license": "",
+          "taskPathPrefix": "",
+          "modulesPathPrefix": "",
+          "browserSupport": [],
+          "fullFeedback": true,
+          "minWidth": "auto"
+      };
+      </script>
+      <script type="text/javascript" src="task.js"></script>
+   </head>
+   
+   <body onresize="task.displayedSubTask.updateScale()">
+      <div id="task">
+         <h1>Pišek in zrna V.</h1>
+
+         <div id="tabsContainer"></div>
+         <div id="taskContent">
+            <div id="taskIntro">
+               <p>
+                  Napiši navodilo, po katerem bo piščanček Pišek pobral vsa zrna in jih pospravil v gnezdo.
+               </p>
+               <p class="easy medium hard">
+                  Pišek lahko nosi le eno zrno naenkrat.
+               </p>
+               <p class="medium">
+                  V vsaki vrstici, razen zadnji, je točno eno zrno in eno gnezdo.
+               </p>
+               <p class="easy">
+                  Uporabiti boš moral "zanke" in "pogojne stavke", da boš lahko preveril, če polje vsebuje zrno ali če polje vsebuje gnezdo.
+               </p>
+               <p class="medium hard">
+                  Uporabiti boš moral gnezdene "zanke" in "pogojne stavke", da boš lahko preveril, če polje vsebuje zrno ali če polje vsebuje gnezdo.
+               </p>
+               <p class="hard"><b>Pozor:</b> Pišek naj ne poskuša odvreči zrna, če ga ne nosi. Pišek ima zelo slab spomin, zato ne ve, ali nosi zrno ali ne, zato boš moral biti pretkan.</p>
+            </div>
+            <div id="gridContainer"></div>
+            <div id="blocklyLibContent"></div>
+         </div>
+
+      </div><!-- task -->
+   </body>
+</html>
+ 

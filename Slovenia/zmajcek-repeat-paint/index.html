@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+   <head>
+    <meta charset="utf-8">
+    <title>dragon-repeat-paint</title>
+	<!-- source: https://github.com/France-ioi/bebras-tasks/tree/master/algorea_training/training-repeat-paint -->
+      <script>
+      window.stringsLanguage = 'sl';
+      </script>
+      <script class="remove" type="text/javascript" src="../../_common/modules/pemFioi/importModules-1.1.js" id="import-modules"></script>
+      <script class="remove" type="text/javascript">
+        var modulesPath = '../../_common/modules/'
+        importModules([
+            'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+            'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+            'taskStyles-0.1']);
+        // set Blockly as default language when none is specified through ?language=
+        importLanguageModules('blockly');
+      </script>
+      <script class="remove" type="text/javascript" src="blocklyPisek_lib.js" id="blocklyPisek_lib"></script>
+      <script class="remove" type="text/javascript">
+       var json = {
+          "id": "http://castor-informatique.fr/questions/algorea_training/training-repeat-paint/",
+          "language": "sl",
+          "version": "sl.01",
+          "authors": "",
+          "translators": [],
+          "license": "",
+          "taskPathPrefix": "",
+          "modulesPathPrefix": "",
+          "browserSupport": [],
+          "fullFeedback": true,
+          "minWidth": "auto"
+      };
+      </script>
+      <script type="text/javascript" src="task.js"></script>
+   </head>
+   <body onresize="task.displayedSubTask.updateScale()">
+      <div id="task">
+         <h1>Nariši stopnice I.</h1>
+         <img src="paint2.png" style="display:none" />
+         <img src="marker.png" style="display:none" />
+         <img src="green_dragon.png" style="display:none" />
+
+         <div id="tabsContainer"></div>
+         <div id="taskContent">
+            <div id="taskIntro">
+               <p>
+                  Napiši zmajčku navodilo po katerem bo pobarval vsa označena polja.
+               </p>
+               <p>
+                  V programu uporabi
+                  <span data-lang="blockly scratch">blok <i>ponavljaj</i>,</span>
+                  <span data-lang="python">zanko <code>for</code>,</span>
+                  tako se ista skupina blokov uporabi večkrat zaporedoma, zato je blok <i>ponavljaj</i> tudi zanka.
+               </p>
+               <div data-lang="blockly scratch">
+                  <p>Trikrat zaporedoma lahko uporabiš dva bloka, kot vidiš na sliki spodaj:
+                     <img data-lang="blockly" src="example_repeat_1.png" style='width:150px;vertical-align:middle'>
+                  </p>
+                  <p>
+                     Vendar raje uporabi zanko <i>ponavljaj 3 krat</i>, saj boš uporabil manj blokov. Primer, kako uporabiš zanko, je na sliki spodaj:
+                     <img data-lang="blockly" src="example_repeat_2.png" style='width:180px;vertical-align:middle'> .
+                  </p>
+                  <p>Število ponovitev spremeniš tako, da klikneš na številko in vtipkaš novo vrednost s tipkovnico.</p>
+               </div>
+               <div data-lang="python">
+                  <p>Primer: bolje kot, da trikrat napišeš isto navodilo:</p>
+<code>
+gor()
+pobarvaj()
+gor()
+pobarvaj()
+gor()
+pobarvaj()
+</code>
+                  <p>lahko uporabiš zanko:</p>
+<code>
+for loop in range(3):
+   gor()
+   pobarvaj()
+</code>
+               </div>
+            </div>
+            <div id="gridContainer"></div>
+            <div id="blocklyLibContent"></div>
+         </div>
+
+      </div><!-- task -->
+   </body>
+</html>
+ 

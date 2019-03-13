@@ -1,8 +1,13 @@
 # PortalPisek
 Skupni repozitorij za delo na Portalu Pisek
 
-### Graficne podobe
+## Besedila nalog
 
-### Besedila
+Naloge so vsebovane v imeniku znotraj direktorija `Slovenia`:
+* index.html vsebuje opis naloge pod `<div id="task">`
+* task.js vsebuje portfolio naloge (testni primeri, uporabljene kocke, omejitev kock, ...)
 
-### Tehnicna podpora
+## Grafike
+
+* 
+
